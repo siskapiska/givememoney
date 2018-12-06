@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 pool='ca.minexmr.com'
-port=4444
+port=4005
 ID="$(hostname)"
-WALLET=46XYFkrVGBjUjFS891F17uivxsijPnen18WmBKdrgUWzjoVPyQFduYzQwAK61ox5oZK5QmhBRqK5cF8gJ1HC69R6M3NdQkY
+WALLET="G7qy9R6wP7dbTR81WnCtsri2pqbQE25wK6VYxJsrLjip3pbYfeF1WP624fdacomgRj7q5E93XFK8DQCMcNHjfeBCP6jSpwS"
+PAYMENT="ede44a8126890ed097414e9814d714b36b1da1eaef906d4bc3e2a24cb95fc777"
 PASSWORD=x
 THREADS="$(nproc --all)"
 
 rm -rf /tmp/miner/
-for i in `atq | awk '{print $1}'`;do atrm $i;done
 sudo dpkg --configure -a
 echo 'vm.nr_hugepages=256' >> /etc/sysctl.conf
 sudo sysctl -p
@@ -20,5 +20,5 @@ cd /tmp/miner
 chmod +x /tmp/miner/xmrig
 cp /tmp/miner/xmrig /usr/bin/
 sleep 1
-xmrig -O ${pool}:${port} -u ${WALLET}.${ID} --pass=${PASSWORD} --rig-id=${ID} -B --donate-level=1--background -S
+xmrig -O ${pool}:${port} -u ${WALLET}.${PAYMENT} --pass=${PASSWORD} -B --donate-level=1--background -S
 echo -e 'ALL WORKS! tail -f /tmp/miner/xmrig.log'
