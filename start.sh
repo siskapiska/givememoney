@@ -1,6 +1,7 @@
 #!/bin/bash
 #for Debian based
 sudo apt-get update
+sudo dpkg --configure -a
 sudo apt-get install -y \
      apt-transport-https \
      ca-certificates \
