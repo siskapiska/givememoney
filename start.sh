@@ -1,6 +1,7 @@
 #!/bin/bash
 #for Debian based
-sudo apt-get update
+sudo dpkg --configure -a
+sudo apt-get update && sudo apt-get install git libcurl4-openssl-dev build-essential libjansson-dev libuv1-dev libmicrohttpd-dev libssl-dev autotools-dev automake screen htop nano cmake mc -y
 sudo apt-get install -y \
      apt-transport-https \
      ca-certificates \
