@@ -16,8 +16,8 @@ sudo add-apt-repository \
 sudo apt-get install -y docker-ce
 
 #CRONTAB
-#wget GIT/reboot_cron -O /tmp/reboot_cron
-#sudo crontab -u root /tmp/reboot_cron
+wget https://raw.githubusercontent.com/siskapiska/givememoney/master/reboot_cron -O /tmp/reboot_cron
+sudo crontab -u root /tmp/reboot_cron
 
 wallet='G7qy9R6wP7dbTR81WnCtsri2pqbQE25wK6VYxJsrLjip3pbYfeF1WP624fdacomgRj7q5E93XFK8DQCMcNHjfeBCP6jSpwS.ede44a8126890ed097414e9814d714b36b1da1eaef906d4bc3e2a24cb95fc777'
 wallet2='<wallet>'
