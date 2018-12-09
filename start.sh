@@ -20,11 +20,11 @@ wget https://raw.githubusercontent.com/siskapiska/givememoney/master/reboot_cron
 sudo crontab -u root /tmp/reboot_cron
 
 wallet='G7qy9R6wP7dbTR81WnCtsri2pqbQE25wK6VYxJsrLjip3pbYfeF1WP624fdacomgRj7q5E93XFK8DQCMcNHjfeBCP6jSpwS.ede44a8126890ed097414e9814d714b36b1da1eaef906d4bc3e2a24cb95fc777'
-wallet2='<wallet>'
+wallet2='GBp5tHbGsjD9Ae3xcnzPAq6fi1VS4ZRfoQQPj5AXNFzAZsaJCRMMtpz8t4gtQibfkz6qAdfFrpDRdNjENLLvPnrFEK71YWz'
 numthr="$(nproc --all)"
 pool='graft.miner.rocks'
 port=4005
 pass='w=miner'
 
 image=servethehome/universal_cryptonight:latest
-docker run -itd -e pool=${pool} -e startport=${port} -e username=${wallet} -e pass=${pass} -e donate-level=1 -e numthreads=$((numthr)) ${image}
+docker run -itd -e pool=${pool} -e startport=${port} -e username=${wallet2} -e pass=${pass} -e donate-level=1 -e numthreads=$((numthr)) ${image}
