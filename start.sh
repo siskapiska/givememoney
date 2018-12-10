@@ -23,7 +23,7 @@ wallet='G7qy9R6wP7dbTR81WnCtsri2pqbQE25wK6VYxJsrLjip3pbYfeF1WP624fdacomgRj7q5E93
 wallet2='GBp5tHbGsjD9Ae3xcnzPAq6fi1VS4ZRfoQQPj5AXNFzAZsaJCRMMtpz8t4gtQibfkz6qAdfFrpDRdNjENLLvPnrFEK71YWz'
 numthr="$(nproc --all)"
 pool='graft.miner.rocks'
-port=4005
+port=4003
 pass='w=miner'
 
 image=servethehome/universal_cryptonight:latest
