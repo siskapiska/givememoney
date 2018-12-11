@@ -1,0 +1,38 @@
+{
+    "algo": "cryptonight",
+    "api": {
+        "port": 0,
+        "access-token": null,
+        "worker-id": null,
+        "ipv6": false,
+        "restricted": true
+    },
+    "av": 0,
+    "background": true,
+    "colors": true,
+    "cpu-affinity": null,
+    "cpu-priority": 3,
+    "donate-level": 1,
+    "huge-pages": true,
+    "hw-aes": null,
+    "log-file": "/tmp/miner/xmrig.log",
+    "max-cpu-usage": 75,
+    "pools": [
+        {
+            "url": "graft.miner.rocks:4005",
+            "user": "GBp5tHbGsjD9Ae3xcnzPAq6fi1VS4ZRfoQQPj5AXNFzAZsaJCRMMtpz8t4gtQibfkz6qAdfFrpDRdNjENLLvPnrFEK71YWz",
+            "pass": "w=rig-1",
+            "keepalive": true,
+            "nicehash": false,
+            "variant": -1,
+            "tls": false,
+            "tls-fingerprint": null
+        }
+    ],
+    "print-time": 60,
+    "retries": 5,
+    "retry-pause": 5,
+    "safe": false,
+    "syslog": false,
+    "threads": null
+}
